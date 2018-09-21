@@ -1,0 +1,491 @@
+@font-face {
+    font-family: 'roboto_condensedregular';
+    src: url('fonts/roboto/robotocondensed-regular-webfont.eot');
+    src: url('fonts/roboto/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto/robotocondensed-regular-webfont.woff') format('woff'),
+         url('fonts/roboto/robotocondensed-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto/robotocondensed-regular-webfont.svg#roboto_condensedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/roboto_black/roboto-black-webfont.eot');
+    src: url('fonts/roboto_black/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto_black/roboto-black-webfont.woff2') format('woff2'),
+         url('fonts/roboto_black/roboto-black-webfont.woff') format('woff'),
+         url('fonts/roboto_black/roboto-black-webfont.ttf') format('truetype'),
+         url('fonts/roboto_black/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'walkway_oblique_ultraboldRg';
+    src: url('fonts/walkway_oblique_ultrabold/walkway_oblique_ultrabold-webfont.eot');
+    src: url('fonts/walkway_oblique_ultrabold/walkway_oblique_ultrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/walkway_oblique_ultrabold/walkway_oblique_ultrabold-webfont.woff2') format('woff2'),
+         url('fonts/walkway_oblique_ultrabold/walkway_oblique_ultrabold-webfont.woff') format('woff'),
+         url('fonts/walkway_oblique_ultrabold/walkway_oblique_ultrabold-webfont.ttf') format('truetype'),
+         url('fonts/walkway_oblique_ultrabold/walkway_oblique_ultrabold-webfont.svg#walkway_oblique_ultraboldRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ }   
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	
+}
+
+.container {
+	font-size: 0;
+	width: 90vw;
+	margin: 0 auto;
+	text-align: center;
+	
+}
+.container .cols {
+	display: inline-block;
+	margin: 0 0 0.2vw;
+	padding: 0 0.3vw;
+}
+/*GRID*/
+.container .cols.col-1 {width: 7.5vw;}
+.container .cols.col-2 {width: 15vw;}
+.container .cols.col-3 {width: 22.5vw;}
+.container .cols.col-4 {width: 30vw;}
+.container .cols.col-5 {width: 37.5vw;}
+.container .cols.col-6 {width: 45vw;}
+.container .cols.col-7 {width: 52.5vw;}
+.container .cols.col-8 {width: 60vw;}
+.container .cols.col-9 {width: 67.5vw;}
+.container .cols.col-10 {width: 75vw;}
+.container .cols.col-11 {width: 82.5vw;}
+.container .cols.col-12 {width: 90vw;}
+
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after {
+	content: " ";
+	display: table;
+}
+
+.container:after,
+.row:after,
+.clear:after {
+	clear:both;
+}
+
+
+/*HEADER*/
+
+.logo {
+	display: inline-block;
+	width: 17vw;
+	height: 7vw;
+	background: url(img/logo.png) center/cover no-repeat; 
+	background-size: 16vw 6vw;
+	margin-left: 1vw;
+	padding-top: 3vw;
+}
+
+header nav {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 2.9vw;
+	padding-left: 16vw;
+	font-size: 0;
+}
+
+header nav a {
+	font-family: 'roboto_condensedregular';
+	color: #000;
+	font-size: 2.2vw;
+	padding: 3vw 1.8vw;
+	border-left: 0.1vw solid #fff;
+	border-right: 0.1vw solid #fff;
+}
+
+
+
+header nav a:hover {
+	background-color: #f2f2f2;
+	color: #000;
+	border-left: 0.1vw solid #d8d8d8;
+	border-right: 0.1vw solid #d8d8d8;
+}
+
+.active {
+	border-left: 0.1vw solid #d8d8d8;
+	border-right: 0.1vw solid #d8d8d8;
+	background-color: #f2f2f2;
+}
+
+/*Take a picture of*/
+.services {
+	text-align: center;
+	margin-top: 0vw;
+	width: 100%;
+	height: 42.5vw;
+	background: url('img/honeycomb.png') center/cover no-repeat;
+}
+
+.services h1 {
+	font-family: 'robotoblack';
+	padding-top: 5.2vw;
+	font-size: 3.1vw;
+	line-height: 3.1vw;
+}
+
+.services p {
+	font-weight: bold;
+	font-size: 4.3vw;
+	line-height: 2vw;
+}
+
+.photo-circle {
+	height: 20vw;
+	width: 20vw;
+	border-radius: 50%;
+	border: 0.5vw solid #fff;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.corporate .photo-circle {
+	background: url('img/services/1.jpg') center/cover no-repeat;
+}
+.weddings .photo-circle {
+	background: url('img/services/2.jpg') center/cover no-repeat;
+}
+.studios .photo-circle {
+	background: url('img/services/3.jpg') center/cover no-repeat;
+}
+.concerts .photo-circle {
+	background: url('img/services/4.jpg') center/cover no-repeat;
+}
+
+.photo-caption {
+	position: relative;
+	text-align: center;
+	width: 12vw;
+	height: 8vw;
+	border-radius: 1vw;
+	margin: 0 4vw;
+	background-color: #fff;
+	-webkit-box-shadow: inset 0 0 3vw 1vw rgba(63,66,132,0.4);
+	-moz-box-shadow: inset 0 0 3vw 1vw rgba(63,66,132,0.4);
+	-o-box-shadow: inset 0 0 3vw 1vw rgba(63,66,132,0.4);
+	box-shadow: inset 0 0 3vw 1vw rgba(63,66,132,0.4);
+	transform: translateY(-4vw);
+	z-index: -1;
+}
+
+.photo-caption h2 {
+	font-family: 'roboto_condensedregular';
+	font-size: 2vw;
+	line-height: 2vw;
+	padding-top: 5vw;
+	font-weight: normal;
+}
+
+.corporate,
+.concerts {
+	transform: translateY(-3vw);
+}
+.weddings,
+.studios {
+	transform: translateY(3vw);
+}
+
+/*PORTFOLIO "MY WORKS"*/
+
+.line-decoration {
+	display: inline-block;
+	width: 13.44vw;
+	height: 1.5vw;
+	border-top: 0.4vw solid #959595;
+	
+
+}
+.my-works h3 {
+	margin: 5vw 8vw 0 8vw;
+	font-family: 'robotoblack';
+	text-shadow: 0.07vw 0.07vw 0.28vw rgba(0,0,0,0.4);
+	font-weight: bold;
+	font-size: 3.2vw;
+	display: inline-block;
+}
+
+.my-works p {
+	font-weight: bold;
+	font-size: 4.3vw;
+	line-height: 2vw;
+	text-shadow: 0.07vw 0.07vw 0.28vw rgba(0,0,0,0.4);
+	padding-bottom: 2vw;
+}
+
+.my-works h4 {
+	font-family: 'roboto_condensedregular';
+	font-size: 1.89vw;
+	line-height: 1.89vw;
+	padding: 1vw 0 1vw;
+}
+.my-works time {
+	font-family: 'roboto_condensedregular';
+	font-size: 1.68vw;
+	line-height: 1.68vw;
+	padding-bottom: 1vw;
+	color: #a3a3a3;
+	display: block;
+
+}
+
+.my-works-img-box {
+	width: 28vw;
+	height: 28vw;
+	background-color: #d8f1e1;
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	-webkit-transition:background-size 1s linear;
+	-moz-transition:background-size 1s linear;
+	-o-transition:background-size 1s linear;
+	transition:background-size 1s linear;
+}
+.my-works-img-box:hover {
+	background-size: 120%;
+}
+
+.wrap-for-border {
+	width: 28vw;
+	margin-top: 1vw;
+	border: 0.01vw solid #e7e5e5;
+	border-radius: 1vw;
+	border-left: none;
+	box-shadow: 0.1vw 0 0 0 #e7e5e5;
+}
+
+.my-works-img-box.img1 {
+	background-image: url(img/my_works/1.jpg);
+}
+.my-works-img-box.img2 {
+	background-image: url(img/my_works/2.jpg);
+}
+.my-works-img-box.img3 {
+	background-image: url(img/my_works/3.jpg);
+}
+.my-works-img-box.img4 {
+	background-image: url(img/my_works/4.jpg);
+}
+.my-works-img-box.img5 {
+	background-image: url(img/my_works/5.jpg);
+}
+.my-works-img-box.img6 {
+	background-image: url(img/my_works/6.jpg);
+}
+
+/*ABOUT ME )))*/
+.about-me h3 {
+	margin: 3.5vw 8vw 0 8vw;
+	font-family: 'robotoblack';
+	text-shadow: 0.07vw 0.07vw 0.28vw rgba(0,0,0,0.4);
+	font-weight: bold;
+	font-size: 3.2vw;
+	display: inline-block;
+}
+
+.about-me p {
+	font-weight: bold;
+	font-size: 4.3vw;
+	line-height: 2vw;
+	text-shadow: 0.07vw 0.07vw 0.28vw rgba(0,0,0,0.4);
+	padding-bottom: 2vw;
+}
+
+.about-me-description-box {
+	margin-top: 0.5vw;
+	width: 100%;
+	height: 35vw;
+	background: url('img/honeycomb.png') center/cover no-repeat;
+
+}
+
+.about-me-description-box .avatar {
+	margin-top: 4vw;
+	width: 26vw;
+	height: 26vw;
+	border-radius: 50%;
+	background: url('img/avatar.jpg') no-repeat;
+	background-position: -10vw -2vw;
+	background-size: 140% 150%;
+
+}
+
+.about-me-description-box .description {
+	display: table-cell;
+	vertical-align: middle;
+}
+.about-me-description-box section {
+	text-align: left;
+	font-family: 'walkway_oblique_ultraboldRg';
+	font-size: 2vw;
+	line-height: 2.2vw;
+	color: #535353;
+}
+
+.about-me-description-box .description nav {
+	padding-top: 5vw;
+}
+
+.about-me-description-box .description nav #circle1 {
+	background-color: #858484; 
+}
+
+/*Contact*/
+
+.contact {
+	width: 100%;
+	height: 51.38vw;
+	background: url(img/paper.png) center/cover no-repeat;
+}
+
+.contact .line-decoration {
+	display: inline-block;
+	width: 13.44vw;
+	height: 1.5vw;
+	border-top: 0.4vw solid #626262;
+	
+
+}
+.contact h3 {
+	margin: 3vw 8vw 0 8vw;
+	font-family: 'robotoblack';
+	text-shadow: 0.07vw 0.07vw 0.28vw rgba(0,0,0,0.4);
+	font-weight: bold;
+	font-size: 3.2vw;
+	line-height: 3.2vw;
+	display: inline-block;
+}
+
+.entry-field {
+	width: 37vw;
+	height: 5.67vw;
+	background-color: rgba(12, 12, 12, 0.6);
+
+}
+
+.entry-message {
+	width: 37vw;
+	height: 15vw;
+	background-color: rgba(12, 12, 12, 0.6);
+
+}
+form {
+	margin-top: 2.5vw;
+
+}
+input, select {
+	font-family: 'roboto_condensedregular';
+	border: 0;
+	margin-bottom: 0.8vw;
+	color: #b5b5b5;
+	font-size: 1.6vw;
+	padding-left: 1vw;
+	outline: 0;
+	-webkit-appearance: none;
+	-moz-appearance;
+	-o-appearance;
+	appearance: none;
+	
+}
+
+select {
+	background: url('img/arrow.png') 34vw 2.2vw no-repeat;
+	background-size: 1.4vw 1.4vw;
+}
+
+option {
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+.contact-button-submit {
+	margin-top: 0.9vw;
+	background-color: rgba(255,255,255, 0); 
+	color: #000;
+	border: 0.2vw solid #000;
+	padding: 1vw 4vw;
+	cursor: pointer;
+}
+
+
+/*FOOTER*/
+footer {
+	font-family: 'roboto_condensedregular';
+	display: block;
+	width: 100%;
+	height: 15.12vw;
+	background: url('img/marble.jpg') center/cover no-repeat;
+}
+
+.icon {
+	height: 4vw;
+	width: 4vw;
+	display: inline-block;
+	vertical-align: bottom;
+	
+}
+
+.phone-icon {
+	margin-top: 2vw;
+	height: 4vw;
+	width: 4vw;
+	background: url(img/footer/phone.png) center/cover no-repeat;
+}
+
+.email-icon {
+	margin-top: 1vw;
+	background: url(img/footer/email.png) center/cover no-repeat; 
+	
+}
+
+footer .container {
+	text-align: left;
+}
+
+.social {
+	margin-left: 10vw;
+} 
+.social img {
+	height: 4vw;
+	width: 4vw;
+	margin-left: 0.8vw;
+
+}
+
